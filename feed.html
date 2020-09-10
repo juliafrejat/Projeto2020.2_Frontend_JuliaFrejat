@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>PiuPiuwer</title>
+        <link rel="shortcut icon" href="">
+        <link rel="stylesheet" type="text/css" href="piupiuwer.css">
+    </head>
+    
+    <body>
+        <header>
+            <a href="">
+                <div class="container-row" id="title">
+                    <img src="img/passaro.svg"/>
+                    <h1>PiuPiuwer</h1>
+                </div>
+            </a>
+
+            <div class="container-row" id="nav">
+                <a href=""><img src="img/casa.svg"/></a>
+                <a href=""><img src="img/explorar.svg"/></a>
+                <a href=""><img src="img/mensagem.svg"/></a>
+                <a href=""><img src="img/notificacao.svg"/></a>
+                <a href=""><img src="img/perfil.svg"/></a>
+                <a href="" id="mais"><img src="img/Mais.svg"/></a>
+            </div>
+
+            <form class="container-row" id="search">
+                <input type="text" name="search"/>
+                <button type="submit"><img src="img/busca.svg"/></button>
+            </form>
+        </header>
+
+        <!--corpo do site-->
+        <div class="container-row" id="body">
+            <!--coluna 1-->
+            <aside class="container-column">
+                <h2>Tendências</h2>
+                <hr>
+            </aside>
+
+    	    <!--coluna 2-->
+            <div class="container-column" id="posts">
+                <!--novo post-->
+                <form class="container-column post" id="newPost">
+                    <div class="container-row withinPost">
+                        <a href=""><img src="img/foto_de_perfil.png"/></a>
+                        <div class="container-row" id="newPost-txt">
+                            <textarea id="newPostTextarea" placeholder="Digite um novo piu."></textarea>
+                        </div>
+                    </div>
+                    <div class="container-row" id="validText">
+                        <p id="errorMsg"></p>
+                        <p id="charCounter">0/140</p>
+                    </div>
+                    <div class="container-row postButtons">
+                        <div class="container-row withinPost interact">
+                            <a href=""><img src="img/post_galeria.svg"/></a>
+                            <a href=""><img src="img/post_camera.svg"/></a>
+                            <a href=""><img src="img/post_emoji.svg"/></a>
+                            <a href=""><img src="img/post_votacao.svg"/></a>
+                        </div>
+                        <input type="submit" class="button withinPost" id="piupiu" value="Piu Piu" disabled/>
+                    </div>
+                </form>
+                <!--fim de novo post-->
+                <!--posts antigos-->
+                <div class="container-column" id="oldPosts">
+                </div>
+                <!--fim de posts antigos-->
+            </div>
+
+            <!--coluna 3-->
+            <aside class="container-column">
+                <h2>Sugestões</h2>
+                <hr>
+            </aside>
+        </div>
+
+        <!--rodapé-->
+        <div class="container-row footer">
+            <div class="container-row links">
+                <a href="">Termos</a>
+                <a href="">Privacidade</a>
+                <a href="">Cookies</a>
+                <a href="">FAQ</a>
+                <a href="">Contato</a>
+                <p>© 2020 PiuPiuwer, Inc.</p>
+            </div>
+        </div>
+
+        <script src="js/valid_piu.js"></script>
+        <script src="js/send_piu.js"></script>
+        <script src="js/interact_piu.js"></script>
+        <script src="js/feed_friendlist.js"></script>
+    </body>
+</html>
